@@ -16,8 +16,7 @@ npm install
 npm start
 ```
 
-## Fuentes
-
+## Paquetes utilizados
 1. [Helia](https://github.com/ipfs/helia)
-2. 安装 [Lector de PDF](https://github.com/helia-project/lector-de-pdf)
-3. 安装 [HeliaPDFLector](https://github.com/helia-project/helia-pdflector)
+2. [electron](https://github.com/electron/electron)
+3. [multiformats](https://github.com/multiformats/multiformats)
