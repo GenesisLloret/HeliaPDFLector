@@ -1,6 +1,7 @@
 const { ipcRenderer } = require('electron');
-const CircularJSON = require('circular-json');
-document.addEventListener('DOMContentLoaded', () => {ipcRenderer.send('run-node-function');});
+document.addEventListener('DOMContentLoaded', () => {
+    ipcRenderer.send('run-node-function');
+});
 ipcRenderer.on('node-id', (event, data) => {
     const combinedUint8Array = data.reduce((acc, base64String) => {
         const uint8Array = new Uint8Array(Buffer.from(base64String, 'base64'));
